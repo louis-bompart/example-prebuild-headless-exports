@@ -1,0 +1,19 @@
+{
+  "name": "externals",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "esbuild index.js --bundle --format=esm \"--external:@servicenow/packages\" > output.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "esbuild": "^0.24.0"
+  },
+  "dependencies": {
+    "@coveo/headless": "^3.1.3"
+  },
+}
